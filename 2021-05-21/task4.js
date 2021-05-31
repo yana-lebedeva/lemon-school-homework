@@ -10,8 +10,8 @@
 
  var requiredAmount = 124426;
  var monthlyAmount = 224852 * 2;
- var myWallet = parseInt(prompt('Введите сколько у вас делег в гривнах'));
- var friendWallet = parseInt(prompt('Введите сколько денег у друга в гривнах'));
+ var myWallet = Number(prompt('Введите сколько у вас денег в гривнах'));
+ var friendWallet = Number(prompt('Введите сколько денег у друга в гривнах'));
 
  var totalAmount = friendWallet + friendWallet;
  alert('Ваша общая сумма: ' + totalAmount);

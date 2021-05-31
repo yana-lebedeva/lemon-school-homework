@@ -5,8 +5,8 @@ var name = prompt('Введите ваше имя');
 
 if (name === '') {
   alert('Ошибка! Введите ваше имя');
-} else if (name === undefined) {
-  
+} else if (name === null) {
+  alert('Вы вышли');
 } else {
   alert('Hello' +  ' ' + name + '!');
 }
