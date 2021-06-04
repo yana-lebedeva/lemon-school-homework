@@ -52,7 +52,7 @@ var person = {
 };
 
 while (true) {
-  var propertyName = prompt('Введите имя свойства, которое вас интересует')
+  let propertyName = prompt('Введите имя свойства, которое вас интересует')
   if (propertyName === null) {
     break;
   }
@@ -76,7 +76,7 @@ console.log(person);
 person.phone = '';
 
 while (true) {
-  var property = prompt('Введите свойство');
+   let property = prompt('Введите свойствоб которое нужно удалить или изменить');
 
   if (property === null) {
     alert('Вы завершили действие')
@@ -84,7 +84,7 @@ while (true) {
   }
 
   if (property in person) {
-    var act = prompt('Напишите что вы хотите сделать (delete либо update)');
+    let act = prompt('Напишите что вы хотите сделать (delete либо update)');
 
     if (act === 'delete') {
       delete person[property];
@@ -108,17 +108,17 @@ console.log(person);
 Переберите в цикле (for..in) сгенерированный ранее объект person, добавляя dt - для имени свойства 
 и dd - для значения свойства (работа с DOM - с использованием методов Native JS). */
 
-var listNode = document.createElement('dl');
+let listNode = document.createElement('dl');
 document.body.appendChild(listNode);
 
-for (var key in person) {
+for (let key in person) {
   console.log(person[key]);
 
-  var titleNode = document.createElement('dt');
+  let titleNode = document.createElement('dt');
   listNode.appendChild(titleNode);
   titleNode.innerText = key;
 
-  var definitionNode = document.createElement('dd');
+  let definitionNode = document.createElement('dd');
   listNode.appendChild(definitionNode);
   definitionNode.innerText = person[key];
 }
@@ -128,10 +128,10 @@ for (var key in person) {
 После этого создайте независимую копию объекта person, не используя встроенный метод Object.assign и JSON.parse, 
 а то есть перебором свойств. */
 
-var gadgetInput = {};
+let gadgetInput = {};
 
 while (true) {
-  var propertyName =prompt('Введите свойство');
+  let propertyName =prompt('Введите свойство для вашего гаджета');
   if (propertyName === null) {
     break;
   }
@@ -141,9 +141,9 @@ while (true) {
 
 person.phone = gadgetInput;
 
-var personClone = {};
+let personClone = {};
 
-for (var key in person) {
+for (let key in person) {
   personClone[key] = person[key];
 }
 
@@ -155,14 +155,14 @@ console.log(personClone);
 
 let {phone: gadget} = person;
 
-for (var key in gadgetInput) {
+for (let key in gadgetInput) {
   console.log(gadgetInput[key]);
 
-  var gadgetElement = document.createElement('dt');
+  let gadgetElement = document.createElement('dt');
   listNode.appendChild(gadgetElement);
   gadgetElement.innerText = key;
 
-  var valueElement = document.createElement('dd');
+  let valueElement = document.createElement('dd');
   gadgetElement.appendChild(valueElement);
   valueElement.innerText = gadgetInput[key];
 }
