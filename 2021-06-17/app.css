@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+tr {
+  margin: 0;
+  background-color: #e4b5f0;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  margin:0;
+  border-radius: 8px;
+}

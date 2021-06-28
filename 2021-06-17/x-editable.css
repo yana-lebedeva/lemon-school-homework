@@ -1,0 +1,12 @@
+[data-editable] {
+  color: #000000;
+  border-bottom: dashed 1px #000000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+[data-editable]:empty::before {
+  content: 'Not set';
+  font-style:italic;
+  color: #DD1144;
+}

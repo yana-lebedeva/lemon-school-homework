@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x-editable</title>
+
+  <link rel="stylesheet" href="x-editable.css">
+</head>
+<body>
+  <div class="container">
+    <dl class="user-data">
+      <dt>Firstname</dt>
+      <dd>
+        <span data-editable="text">John</span>
+      </dd>
+
+      <dt>Lastname</dt>
+      <dd><span data-editable="text">Doe</span></dd>
+
+      <dt>Email</dt>
+      <dd><a href="#" data-editable="email">doe@mail.com</a></dd>
+
+      <dt>Password</dt>
+      <dd><span data-editable="password">111111</span></dd>
+
+      <dt>Age</dt>
+      <dd><span data-editable="number"></span></dd>
+    </dl>
+
+    <div>lorem ipsum dolor sit amet</div>
+    <span data-editable>hello world</span>
+  </div>
+
+
+  <script src="x-editable.js"></script>
+</body>
+</html>
